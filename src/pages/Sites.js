@@ -1,6 +1,6 @@
 // css:
 import styles from "../pages-css/Sites.module.css";
-import "../public/data/sites.json";
+import "../public/sites.json";
 // assets:
 import Screenshot from "../components/Screenshot";
 
