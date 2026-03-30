@@ -1,6 +1,6 @@
 // css:
 import styles from "../pages-css/Sites.module.css";
-import "../public/sites.json";
+import siteData from "../sites.json";
 // assets:
 import Screenshot from "../components/Screenshot";
 
@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 export default function Sites() {
   const [sites, setSites] = useState(null);
   const [documentError, setDocumentError] = useState(null);
-  const documents = require("../public/data/sites.json");
+  const documents = siteData;
   // useEffect(() => {
   //   setSites(docs);
   // }, []);
