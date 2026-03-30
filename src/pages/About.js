@@ -74,100 +74,95 @@ export default function About() {
                 back to your community.
               </p>
               <section className={styles["skills-section"]}>
-                {document && (
-                  <div>
-                    <ul className={styles["skills-list"]}>
-                      <li className={styles.skill}>
-                        <figure alt="JavaScript logo">
-                          <SiJavascript
-                            className={styles.fig}
-                            aria-label="JavaScript logo"
-                          />
-                          <figcaption>
-                            <h4>JavaScript</h4>
-                          </figcaption>
-                        </figure>
-                      </li>
-                      <li className={styles.skill}>
-                        <figure>
-                          <SiReact
-                            className={styles.fig}
-                            aria-label="React logo"
-                          />
-                          <figcaption>
-                            <h4>React</h4>
-                          </figcaption>
-                        </figure>
-                      </li>
-                      <li className={styles.skill}>
-                        <figure>
-                          <SiCss3
-                            className={styles.fig}
-                            aria-label="CSS logo"
-                          />
-                          <figcaption>
-                            <h4>CSS</h4>
-                          </figcaption>
-                        </figure>
-                      </li>
-                      <li className={styles.skill}>
-                        <figure>
-                          <SiHtml5
-                            className={styles.fig}
-                            aria-label="HTML logo"
-                          />
-                          <figcaption>
-                            <h4>HTML</h4>
-                          </figcaption>
-                        </figure>
-                      </li>
-                      <li className={styles.skill}>
-                        <figure>
-                          <SiFirebase
-                            className={styles.fig}
-                            aria-label="Firebase logo"
-                          />
-                          <figcaption>
-                            <h4>Firebase</h4>
-                          </figcaption>
-                        </figure>
-                      </li>
-                      <li className={styles.skill}>
-                        <figure>
-                          <SiInkscape
-                            className={styles.fig}
-                            aria-label="Inkscape logo"
-                          />
-                          <figcaption>
-                            <h4>Vector Art</h4>
-                          </figcaption>
-                        </figure>
-                      </li>
-                      <li className={styles.skill}>
-                        <figure>
-                          <SiNodedotjs
-                            className={styles.fig}
-                            aria-label="Node.js logo"
-                          />
-                          <figcaption>
-                            <h4>Node.js</h4>
-                          </figcaption>
-                        </figure>
-                      </li>
-                      <li className={styles.skill}>
-                        <figure>
-                          <SiGithub
-                            className={styles.fig}
-                            aria-label="GitHub logo"
-                          />
-                          <figcaption>
-                            <h4>gitHub</h4>
-                          </figcaption>
-                        </figure>
-                      </li>
-                    </ul>
-                  </div>
-                )}
+                <div>
+                  <ul className={styles["skills-list"]}>
+                    <li className={styles.skill}>
+                      <figure alt="JavaScript logo">
+                        <SiJavascript
+                          className={styles.fig}
+                          aria-label="JavaScript logo"
+                        />
+                        <figcaption>
+                          <h4>JavaScript</h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li className={styles.skill}>
+                      <figure>
+                        <SiReact
+                          className={styles.fig}
+                          aria-label="React logo"
+                        />
+                        <figcaption>
+                          <h4>React</h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li className={styles.skill}>
+                      <figure>
+                        <SiCss3 className={styles.fig} aria-label="CSS logo" />
+                        <figcaption>
+                          <h4>CSS</h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li className={styles.skill}>
+                      <figure>
+                        <SiHtml5
+                          className={styles.fig}
+                          aria-label="HTML logo"
+                        />
+                        <figcaption>
+                          <h4>HTML</h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li className={styles.skill}>
+                      <figure>
+                        <SiFirebase
+                          className={styles.fig}
+                          aria-label="Firebase logo"
+                        />
+                        <figcaption>
+                          <h4>Firebase</h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li className={styles.skill}>
+                      <figure>
+                        <SiInkscape
+                          className={styles.fig}
+                          aria-label="Inkscape logo"
+                        />
+                        <figcaption>
+                          <h4>Vector Art</h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li className={styles.skill}>
+                      <figure>
+                        <SiNodedotjs
+                          className={styles.fig}
+                          aria-label="Node.js logo"
+                        />
+                        <figcaption>
+                          <h4>Node.js</h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li className={styles.skill}>
+                      <figure>
+                        <SiGithub
+                          className={styles.fig}
+                          aria-label="GitHub logo"
+                        />
+                        <figcaption>
+                          <h4>gitHub</h4>
+                        </figcaption>
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
               </section>
             </div>
           </div>

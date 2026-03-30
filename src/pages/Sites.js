@@ -1,25 +1,28 @@
 // css:
 import styles from "../pages-css/Sites.module.css";
-
+import "../public/data/sites.json";
 // assets:
 import Screenshot from "../components/Screenshot";
 
 import { useState, useEffect } from "react";
-import { useCollection } from "../hooks/useCollection";
+// import { useCollection } from "../hooks/useCollection";
 
 export default function Sites() {
   const [sites, setSites] = useState(null);
   const [documentError, setDocumentError] = useState(null);
-  const { documents, error } = useCollection("sites");
+  const documents = require("../public/data/sites.json");
+  // useEffect(() => {
+  //   setSites(docs);
+  // }, []);
+  // const { documents, error } = useCollection("sites");
 
   useEffect(() => {
     if (documents) {
       setSites(documents);
+    } else {
+      setDocumentError("Error loading documents");
     }
-    if (error) {
-      setDocumentError(error);
-    }
-  }, [documents, error]);
+  }, [documents]);
 
   return (
     <div className={`page-content ${styles["my-sites"]}`}>
@@ -30,7 +33,7 @@ export default function Sites() {
       {sites && (
         <section>
           <ul className={styles.list}>
-            {sites.map((site) => {
+            {sites.list.map((site) => {
               return (
                 <li key={site.title} className={styles.item}>
                   <div className={styles.border}>

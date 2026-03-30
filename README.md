@@ -4,7 +4,7 @@
 
 It features previous websites I've built, information about me, ways to get in touch, and some of my personal blogs & digital art for you to gaze upon.
 
-This project was created with [React](https://reactjs.org/) and is hosted using [Firebase](https://firebase.google.com/).
+This project was created with [React](https://reactjs.org/).
 
 ## Installation
 
