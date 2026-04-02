@@ -15,7 +15,7 @@ import snakeGame from "../assets/sites-screenshots/snake-game.png";
 import magicCardGame from "../assets/sites-screenshots/magic-card-game.png";
 
 export default function Screenshot(site) {
-  // console.log();
+  // console.log(site);
   return (
     <img
       className={styles.shot}

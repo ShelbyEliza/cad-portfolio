@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 // page components:
 import About from "./pages/About";
 import Sites from "./pages/Sites";
-import BlogsAndArt from "./pages/BlogsAndArt";
+import Models from "./pages/Renders";
 import Header from "./components/Header";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/sites" element={<Sites />} />
-            <Route path="/blogs-and-art" element={<BlogsAndArt />} />
+            <Route path="/models" element={<Models />} />
             <Route path="*" element={<Navigate to="/about" />} />
           </Routes>
         </div>

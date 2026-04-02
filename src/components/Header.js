@@ -54,12 +54,12 @@ export default function Header() {
           <nav className={`${styles["btn-container"]} `}>
             <div className={styles["rotating-btns"]} id={rotationClass}>
               <NavLink
-                id="blogs-and-art"
-                to={"/blogs-and-art"}
-                className={styles["blogs-and-art-btn"]}
+                id="models"
+                to={"/models"}
+                className={styles["models-btn"]}
                 onClick={(e) => selectPage(e.target.id)}
               >
-                Blogs and Art
+                CAD Renders
               </NavLink>
               <NavLink
                 id="about"

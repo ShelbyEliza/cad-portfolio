@@ -5,8 +5,8 @@ export default function usePathName() {
   let locationPath = useLocation().pathname;
 
   if (
-    // locationPath !== "/about" &&
-    locationPath !== "/blogs-and-art" &&
+    locationPath !== "/models" &&
+    // locationPath !== "/blogs-and-art" &&
     locationPath !== "/sites"
   ) {
     locationPath = "/about";

@@ -19,23 +19,23 @@ header {
   height: 100%;
 }
 
-.about-selected-from-blogs-and-art {
-  animation: 1s linear 0s 1 normal both running rotate-about-from-blogs-and-art;
+.about-selected-from-models {
+  animation: 1s linear 0s 1 normal both running rotate-about-from-models;
 }
 .about-selected-from-sites {
   animation: 1s linear 0s 1 normal both running rotate-about-from-sites;
 }
-.blogs-and-art-selected-from-about {
-  animation: 1s linear 0s 1 normal both running rotate-blogs-and-art-from-about;
+.models-selected-from-about {
+  animation: 1s linear 0s 1 normal both running rotate-models-from-about;
 }
-.blogs-and-art-selected-from-sites {
-  animation: 1s linear 0s 1 normal both running rotate-blogs-and-art-from-sites;
+.models-selected-from-sites {
+  animation: 1s linear 0s 1 normal both running rotate-models-from-sites;
 }
 .sites-selected-from-about {
   animation: 1s linear 0s 1 normal both running rotate-sites-from-about;
 }
-.sites-selected-from-blogs-and-art {
-  animation: 1s linear 0s 1 normal both running rotate-sites-from-blogs-and-art;
+.sites-selected-from-models {
+  animation: 1s linear 0s 1 normal both running rotate-sites-from-models;
 }
 .static {
   position: absolute;
@@ -62,7 +62,7 @@ header {
   color: rgba(255, 255, 255, 0);
 }
 
-.blogs-and-art-btn,
+.models-btn,
 .about-btn,
 .sites-btn {
   display: flex;
@@ -77,7 +77,7 @@ header {
   z-index: 1;
 }
 
-.blogs-and-art-btn {
+.models-btn {
   height: 43px;
   width: 152px;
 
@@ -105,7 +105,7 @@ header {
   rotate: -60deg;
 }
 .about-btn:hover,
-.blogs-and-art-btn:hover,
+.models-btn:hover,
 .sites-btn:hover {
   cursor: pointer;
 }
@@ -113,7 +113,7 @@ header {
 /*-------------------- Responsive Design ----------------------*/
 /* ------- desktop ------- */
 @media only screen and (min-width: 900px) {
-  .blogs-and-art-btn:hover,
+  .models-btn:hover,
   .about-btn:hover,
   .sites-btn:hover {
     border: 1px solid var(--sweet-perfume-super-duper-trans);

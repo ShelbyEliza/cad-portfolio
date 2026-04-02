@@ -5,16 +5,11 @@ import siteData from "../sites.json";
 import Screenshot from "../components/Screenshot";
 
 import { useState, useEffect } from "react";
-// import { useCollection } from "../hooks/useCollection";
 
 export default function Sites() {
   const [sites, setSites] = useState(null);
   const [documentError, setDocumentError] = useState(null);
   const documents = siteData;
-  // useEffect(() => {
-  //   setSites(docs);
-  // }, []);
-  // const { documents, error } = useCollection("sites");
 
   useEffect(() => {
     if (documents) {
