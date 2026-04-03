@@ -1,0 +1,131 @@
+.header {
+  padding: 1.5rem 2rem 0rem 2rem;
+  background: linear-gradient(
+    0.25turn,
+    var(--transparent),
+    var(--cold-lips-trans),
+    var(--transparent)
+  );
+}
+
+.header-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ---- Top section: photo + name/info ---- */
+.top-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  /* border: 0.15rem solid var(--sweet-perfume); */
+  justify-content: center;
+}
+
+.photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 25%;
+  object-fit: cover;
+  border: 0.15rem solid var(--accent-light);
+}
+
+.name-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding-top: 0.5rem;
+}
+
+.name {
+  /* font-family: "Tienne", serif; */
+  font-size: 2.4rem;
+  color: var(--perrywinkle);
+  margin: 0;
+  font-family: "Kumar One Outline", cursive;
+}
+
+.subtitle {
+  font-family: "Proza Libre", sans-serif;
+  font-size: 1rem;
+  color: var(--text-light);
+  margin: 0;
+  text-align: center;
+  padding-bottom: 0.6rem;
+}
+
+.contact-info {
+  display: flex;
+  gap: 2rem;
+  font-family: "Proza Libre", sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding-bottom: 0.5rem;
+}
+
+.contact-info a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: var(--accent-light);
+}
+
+/* ---- Nav ---- */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0.6rem 0rem;
+  border-top: 0.08rem solid var(--accent-light-trans);
+}
+
+.nav a {
+  font-family: "Tienne", serif;
+  font-size: 1.3rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.15rem solid transparent;
+  transition:
+    color 0.2s ease,
+    border-bottom-color 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--accent-light);
+  border-bottom-color: var(--accent-light);
+}
+
+/* Active page link */
+.nav a.active {
+  color: var(--accent-light);
+  border-bottom-color: var(--accent-light);
+}
+
+/* ---- Responsive ---- */
+@media only screen and (max-width: 600px) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .nav {
+    gap: 1.5rem;
+  }
+
+  .nav a {
+    font-size: 1.1rem;
+  }
+}

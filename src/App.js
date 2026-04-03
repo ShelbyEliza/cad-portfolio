@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import About from "./pages/About";
 import Sites from "./pages/Sites";
 import Models from "./pages/Renders";
-import Header from "./components/Header";
+// import Header from "./components/Header";
+import Header from "./components/HeaderSimple.js";
 
 function App() {
   return (

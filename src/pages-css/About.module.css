@@ -1,59 +1,54 @@
 .about-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-bottom: 2rem;
-
   border-radius: 2rem;
 }
-.about-container section {
-  display: flex;
-  width: 100%;
-}
+
 .about-container b {
   color: var(--creamy-berry);
-
   font-weight: 700;
 }
 
-.col-1 {
-  flex: 1;
-  text-align: center;
-}
-.col-2 {
-  flex: 3;
-  text-align: center;
-}
-.title-section,
-.edu-skills-section,
-.bottom-left,
-.bottom-right {
-  box-shadow: 0rem 0rem 0.6rem 0.01rem var(--sweet-perfume-super-trans);
-  border: 0.08rem solid var(--sweet-perfume);
+/* ---- Shared section styles ---- */
+.about-container section {
+  display: flex;
+  width: 100%;
+  /* border-top: 0.08rem solid var(--sweet-perfume); */
 }
 
-.title-section {
-  background: var(--infinity);
-
+/* ---- Education & Skills ---- */
+.edu-skills-section {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 }
-.subtitle {
-  width: fit-content;
-  margin: auto;
-  word-break: break-word;
 
-  font-family: "Proza Libre", sans-serif;
+.col-1 {
+  flex: 0 0 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  background: var(--infinity);
+  border-right: 0.08rem solid var(--sweet-perfume);
+  border-top-left-radius: 2rem;
+}
+
+.col-2 {
+  flex: 1;
 }
 
 .col-2-content {
   padding: 2rem 3rem;
-
   background: var(--infinity-trans);
+  border-top-right-radius: 2rem;
 }
+
 .col-2-content a {
   color: var(--perrywinkle);
   font-weight: 700;
 }
+
 .col-2-content a:hover {
   color: var(--sweet-perfume);
   text-decoration: underline;
@@ -61,147 +56,165 @@
 
 .col-2-content p {
   padding-top: 0.2rem;
+  padding-bottom: 1.2rem;
   text-align: left;
-
   font-family: "Proza Libre", sans-serif;
   line-height: 1.6;
   color: var(--peekaboo);
 }
 
-.edu-skills-section .col-2-content p {
-  padding-bottom: 1.2rem;
-  text-indent: 5%;
-}
-.passions-section .col-2-content p {
-  padding-bottom: 0.4rem;
-}
-.indent {
-  text-indent: 8%;
-}
-
-.photo {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-
-  background: var(--moonraker);
-  border-top-left-radius: 2rem;
-}
-.edu-skills-section .col-1,
-.edu-skills-section .col-2-content {
-  border-left: 0.04rem solid var(--sweet-perfume);
-  border-right: 0.04rem solid var(--sweet-perfume);
-  box-shadow: 0rem 0rem 0.6rem 0.01rem var(--sweet-perfume-super-trans);
-}
-.edu-skills-section .col-1,
-.passions-section .col-1 {
-  background: var(--infinity);
+.section-heading {
+  font-family: "Tienne", serif;
+  font-weight: 900;
+  color: var(--mangala-pink);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: 1.4rem;
 }
 
 .about-container h3 {
   text-align: center;
-
   font-family: "Tienne", serif;
   font-weight: 900;
   color: var(--mangala-pink);
+  margin-top: 1.4rem;
+}
+
+/* ---- Skills icons ---- */
+.skills-section {
+  margin-top: 1.4rem;
+  padding-top: 1rem;
+  border-top: 0.08rem solid var(--sweet-perfume);
 }
 
 .skills-list {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-
-  margin-top: 1.2rem;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  padding: 0;
 }
+
 .skill {
   display: flex;
   align-items: center;
-  margin: 0.2rem;
-  padding: 0.6rem 1rem;
-
+  padding: 0.5rem 0.8rem;
   background: var(--infinity);
-  border-radius: 1rem;
+  border: 0.08rem solid var(--sweet-perfume);
+  border-radius: 0.8rem;
+  font-size: 1rem;
+}
 
-  font-size: 1.2rem;
-}
-.skill figure,
-.skill figcaption {
+.skill figure {
   display: flex;
+  align-items: center;
+  margin: 0;
 }
+
 .skill figcaption {
   color: var(--peekaboo);
 }
 
-.fig {
-  width: 24px;
-  height: 24px;
-  margin-left: auto;
-  margin-right: 0.8rem;
+.skill h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: "Proza Libre", sans-serif;
+}
 
+.fig {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.6rem;
   color: var(--sweet-perfume);
 }
 
-/*-------------------- Responsive Design ----------------------*/
-/* ------- desktop ------- */
-@media only screen and (min-width: 900px) {
-  .page-heading {
-    font-size: 2.8rem;
-    padding: 2rem;
-  }
-  .subtitle {
-    padding: 2%;
-  }
-  .photo {
-    width: 225px;
-    height: 225px;
-  }
-  .bottom-left {
-    border-bottom-left-radius: 2rem;
-  }
-  .bottom-right,
-  .bottom-right .col-2-content {
-    border-bottom-right-radius: 2rem;
-  }
-  .edu-skills-section .col-1,
-  .passions-section .col-1 {
-    padding-top: 2rem;
-  }
+/* ---- Passions ---- */
+.passions-section {
+  flex-direction: column !important;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top: none;
 }
 
-/* ------- tablet & mobile -------- */
+.passions-header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--infinity);
+  border-bottom: 0.08rem solid var(--sweet-perfume);
+  border-top: 0.08rem solid var(--sweet-perfume);
+}
+
+.passions-header .section-heading {
+  writing-mode: horizontal-tb;
+  transform: none;
+  font-size: 1.6rem;
+}
+
+.passions-content {
+  padding: 1.5rem 3rem 2rem 3rem;
+  background: var(--infinity-trans);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.passions-content ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+}
+
+.passions-content li {
+  list-style: none;
+}
+
+.passions-content p {
+  text-align: left;
+  font-family: "Proza Libre", sans-serif;
+  line-height: 1.6;
+  color: var(--peekaboo);
+  padding-bottom: 0.4rem;
+}
+
+.indent {
+  text-indent: 8%;
+}
+
+/* ---- Responsive ---- */
 @media only screen and (max-width: 899px) {
-  .photo {
-    width: 100%;
-    height: 100%;
-  }
-  .page-heading {
-    padding: 0.8rem 0.8rem 0rem 0.8rem;
-    font-size: 1.8rem;
-  }
-  .subtitle {
-    font-size: 0.8rem;
-    padding-bottom: 4%;
-  }
-  .edu-skills-section,
-  .passions-section {
+  .edu-skills-section {
     flex-direction: column;
   }
-  .edu-skills-section .col-1,
-  .edu-skills-section .col-2,
-  .passions-section .col-1,
-  .passions-section .col-2 {
+
+  .col-1 {
+    flex: 0 0 auto;
     width: 100%;
+    border-right: none;
+    border-bottom: 0.08rem solid var(--sweet-perfume);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 0.8rem;
   }
-  .edu-skills-section .col-1,
-  .passions-section .col-1 {
-    padding: 0.3rem;
-    font-size: 0.8rem;
-    justify-content: center;
+
+  .section-heading {
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 1.3rem;
   }
-  .passions-section .col-2,
-  .passions-section .col-2-content {
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+
+  .col-2-content {
+    padding: 1.2rem 1.4rem;
+    border-top-right-radius: 0;
+  }
+
+  .passions-content {
+    padding: 1rem 1.2rem 1.5rem 1.2rem;
+  }
+
+  .passions-content ul {
+    grid-template-columns: 1fr;
   }
 }

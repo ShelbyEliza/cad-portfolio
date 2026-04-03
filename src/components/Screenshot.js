@@ -19,7 +19,7 @@ export default function Screenshot(site) {
   return (
     <img
       className={styles.shot}
-      src={site.site.screenshotAddress}
+      src={site.site.src}
       alt={`${site.site.title}'s screenshot`}
     />
   );

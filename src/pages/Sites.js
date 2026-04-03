@@ -1,15 +1,15 @@
 // css:
 import styles from "../pages-css/Sites.module.css";
-import siteData from "../sites.json";
+
 // assets:
-import Screenshot from "../components/Screenshot";
+import { SitesData } from "../assets/sites-screenshots/sites-index.js";
 
 import { useState, useEffect } from "react";
 
 export default function Sites() {
   const [sites, setSites] = useState(null);
   const [documentError, setDocumentError] = useState(null);
-  const documents = siteData;
+  const documents = SitesData;
 
   useEffect(() => {
     if (documents) {
@@ -28,13 +28,17 @@ export default function Sites() {
       {sites && (
         <section>
           <ul className={styles.list}>
-            {sites.list.map((site) => {
+            {sites.map((site) => {
               return (
                 <li key={site.title} className={styles.item}>
                   <div className={styles.border}>
                     <div className={styles.left}>
                       <a href={site.link} className={styles.link}>
-                        <Screenshot site={site} />
+                        <img
+                          className={styles.shot}
+                          src={site.src}
+                          alt={`${site.title}'s screenshot`}
+                        />
                       </a>
                     </div>
                     <div className={styles.right}>
