@@ -32,6 +32,8 @@
 
   --cold-lips: #939ee8ff;
   --cold-lips-trans: #91b7e72d;
+
+  --noble-black: #1b2029;
   /* --cold-lips-trans: #91b7e700; */
 }
 
@@ -63,6 +65,14 @@ body {
   background-image: url("/src/assets/backgrounds/starry-sky.jpg");
   background-size: cover;
 }
+.app {
+  background: linear-gradient(
+    0.25turn,
+    var(--transparent),
+    var(--cold-lips-trans),
+    var(--transparent)
+  );
+}
 .site-content {
   width: 900px;
   margin: auto;
@@ -84,7 +94,7 @@ a:hover {
 h1,
 h2 {
   color: var(--mangala-pink);
-  text-shadow: var(--sweet-perfume-trans) 0rem 0 0.2rem;
+  /* text-shadow: var(--sweet-perfume-trans) 0rem 0 0.1rem; */
   font-family: "Kumar One Outline", cursive;
 }
 

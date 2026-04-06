@@ -19,9 +19,6 @@ export default function Models() {
 
   return (
     <div className={`page-content ${styles["my-sites"]}`}>
-      <div className={styles.top}>
-        <h1 className={styles["page-heading"]}>My Models</h1>
-      </div>
       {documentError && <p>{documentError}</p>}
       {renders && (
         <>
@@ -42,10 +39,6 @@ export default function Models() {
                         src={image.src}
                         alt={image.alt}
                       />
-                      <h3 className={styles.title}>{image.title}</h3>
-                      <p className={styles["image-description"]}>
-                        {image.description}
-                      </p>
                     </div>
                   </li>
                 );
@@ -69,10 +62,116 @@ export default function Models() {
                         src={image.src}
                         alt={image.alt}
                       />
-                      {/* <h3 className={styles.title}>{image.title}</h3>
-                  <p className={styles["image-description"]}>
-                    {image.description}
-                  </p> */}
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+          <section>
+            <div className={styles.top}>
+              <h2 className={styles["section-header"]}>Cat Wheel</h2>
+              <p className={styles.description}>
+                Plastic Injection Molded Part (base) Redesigned for Aluminum Die
+                Casting Manufacturing
+              </p>
+            </div>
+            <ul className={styles.list}>
+              {renders.wheelImages.map((image) => {
+                return (
+                  <li key={image.title} className={styles.item}>
+                    <div className={styles.border}>
+                      <img
+                        className={styles.shot}
+                        src={image.src}
+                        alt={image.alt}
+                      />
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+          <section>
+            <div className={styles.top}>
+              <h2 className={styles["section-header"]}>Sheet Metal Projects</h2>
+              <p className={styles.description}>Sheet Metal</p>
+            </div>
+            <ul className={styles.list}>
+              {renders.sheetMetalImages.map((image) => {
+                return (
+                  <li key={image.title} className={styles.item}>
+                    <div className={styles.border}>
+                      <img
+                        className={styles.shot}
+                        src={image.src}
+                        alt={image.alt}
+                      />
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+          <section>
+            <div className={styles.top}>
+              <h2 className={styles["section-header"]}>Drafting Desk</h2>
+              <p className={styles.description}>
+                Functional Mechanical Drafting Desk
+              </p>
+            </div>
+            <ul className={styles.list}>
+              {renders.deskImages.map((image) => {
+                return (
+                  <li key={image.title} className={styles.item}>
+                    <div className={styles.border}>
+                      <img
+                        className={styles.shot}
+                        src={image.src}
+                        alt={image.alt}
+                      />
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+          <section>
+            <div className={styles.top}>
+              <h2 className={styles["section-header"]}>3D Printed Solutions</h2>
+              <p className={styles.description}>3D Printed Parts</p>
+            </div>
+            <ul className={styles.list}>
+              {renders.threeDPrintsImages.map((image) => {
+                return (
+                  <li key={image.title} className={styles.item}>
+                    <div className={styles.border}>
+                      <img
+                        className={styles.shot}
+                        src={image.src}
+                        alt={image.alt}
+                      />
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+          <section>
+            <div className={styles.top}>
+              <h2 className={styles["section-header"]}>Even More!</h2>
+              <p className={styles.description}>Extra Designs</p>
+            </div>
+            <ul className={styles.list}>
+              {renders.otherImages.map((image) => {
+                return (
+                  <li key={image.title} className={styles.item}>
+                    <div className={styles.border}>
+                      <img
+                        className={styles.shot}
+                        src={image.src}
+                        alt={image.alt}
+                      />
                     </div>
                   </li>
                 );

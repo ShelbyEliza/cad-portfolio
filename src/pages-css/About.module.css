@@ -74,11 +74,18 @@
 }
 
 .about-container h3 {
-  text-align: center;
+  /* text-align: center; */
   font-family: "Tienne", serif;
   font-weight: 900;
   color: var(--mangala-pink);
   margin-top: 1.4rem;
+}
+
+.subtitle {
+  display: flex;
+}
+.subtitle p {
+  flex: auto;
 }
 
 /* ---- Skills icons ---- */

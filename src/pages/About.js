@@ -9,22 +9,33 @@ import {
   SiNodedotjs,
   SiGithub,
 } from "react-icons/si";
+// import inventorIcon from "../assets/inventor.svg";
 
 export default function About() {
   return (
     <div className="page-content">
       <div className={styles["about-container"]}>
         <section className={styles["edu-skills-section"]}>
-          <div className={styles["col-1"]}>
+          {/* <div className={styles["col-1"]}>
             <h2 className={styles["section-heading"]}>Education & Skills</h2>
-          </div>
+          </div> */}
           <div className={styles["col-2"]}>
             <div className={styles["col-2-content"]}>
-              <h3>Formal Education</h3>
-              <p>
-                I graduated from the University of Arkansas in 2015 with a
-                Bachelor of Science in Geology and Minor in French Language.
-              </p>
+              <h3>Education</h3>
+              <h4>Computer Aided Design and Drafting (CADD) Certificate</h4>
+              <div className={styles["subtitle"]}>
+                <p>Portland Community College</p>
+                <p>Portland, OR</p>
+                <p>Spring 2026</p>
+              </div>
+              <h4>
+                Bachelor of Science - Major in Geology; Minor in French Language
+              </h4>
+              <div className={styles["subtitle"]}>
+                <p>University of Arkansas</p>
+                <p>Fayetteville, AR</p>
+                <p>Spring 2015</p>
+              </div>
               <h3>Web Development</h3>
               <p>
                 To say I am a self-taught web developer is an unfair assessment.
@@ -50,6 +61,19 @@ export default function About() {
 
               <section className={styles["skills-section"]}>
                 <ul className={styles["skills-list"]}>
+                  <li className={styles.skill}>
+                    <figure>
+                      <img
+                        className={styles.fig}
+                        // aria-label="Inventor logo"
+                        alt="Inventor logo"
+                        src="/images/inventor.svg"
+                      />
+                      <figcaption>
+                        <h4>JavaScript</h4>
+                      </figcaption>
+                    </figure>
+                  </li>
                   <li className={styles.skill}>
                     <figure>
                       <SiJavascript

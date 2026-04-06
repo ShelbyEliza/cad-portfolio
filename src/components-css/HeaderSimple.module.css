@@ -1,11 +1,11 @@
 .header {
   padding: 1.5rem 2rem 0rem 2rem;
-  background: linear-gradient(
+  /* background: linear-gradient(
     0.25turn,
     var(--transparent),
     var(--cold-lips-trans),
     var(--transparent)
-  );
+  ); */
 }
 
 .header-container {

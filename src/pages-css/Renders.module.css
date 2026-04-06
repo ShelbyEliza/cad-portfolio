@@ -1,12 +1,13 @@
 /* Project Section */
 .section-header {
-  text-align: center;
   padding: 0.8rem 1.4rem;
-  background: var(--shuriken);
   color: var(--mangala-pink);
   font-family: "Tienne", serif;
   font-size: 1.6rem;
   border-bottom: 0.08rem solid var(--sweet-perfume);
+  background: var(--noble-black);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .description {
