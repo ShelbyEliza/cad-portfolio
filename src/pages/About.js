@@ -9,55 +9,102 @@ import {
   SiNodedotjs,
   SiGithub,
 } from "react-icons/si";
-// import inventorIcon from "../assets/inventor.svg";
 
 export default function About() {
   return (
     <div className="page-content">
       <div className={styles["about-container"]}>
         <section className={styles["edu-skills-section"]}>
-          {/* <div className={styles["col-1"]}>
-            <h2 className={styles["section-heading"]}>Education & Skills</h2>
-          </div> */}
           <div className={styles["col-2"]}>
             <div className={styles["col-2-content"]}>
               <h3>Education</h3>
-              <h4>Computer Aided Design and Drafting (CADD) Certificate</h4>
+              <h4 className={styles.indent}>
+                Computer Aided Design and Drafting (CADD) Certificate
+              </h4>
               <div className={styles["subtitle"]}>
                 <p>Portland Community College</p>
                 <p>Portland, OR</p>
                 <p>Spring 2026</p>
               </div>
-              <h4>
-                Bachelor of Science - Major in Geology; Minor in French Language
+              <h4 className={styles.indent}>
+                Bachelor of Science | Major in Geology
               </h4>
               <div className={styles["subtitle"]}>
                 <p>University of Arkansas</p>
                 <p>Fayetteville, AR</p>
                 <p>Spring 2015</p>
               </div>
-              <h3>Web Development</h3>
-              <p>
-                To say I am a self-taught web developer is an unfair assessment.
-                Without the seemingly infinite collections of computer science
-                knowledge available at the click of a mouse and the incredible
-                educators strewn about the internet I would know close to
-                nothing. I wouldn&#39;t be able to construct useful tools like
-                my recipe catalog,{" "}
-                <a href="https://larder-to-table.web.app/">Larder to Table</a>,
-                or my reading blog,{" "}
-                <a href="https://under-the-shelf.web.app/">Under the Shelf</a>.
-                I wouldn&#39;t be able to see the joy on my nephews&#39; and
-                nieces&#39; faces while they play the{" "}
-                <a href="https://snake-game-27ff9.web.app/">Snake Game</a> I
-                built.
-              </p>
-              <p>
-                In the past two years of study I have learned that the
-                continuous pursuit of knowledge is the most critical aspect of
-                developing on the web; followed closely by giving that knowledge
-                back to your community.
-              </p>
+              <div className={styles["exp-section"]}>
+                <h3>Experience</h3>
+                <p className={styles.indent}>
+                  Knowledgeable and motivated CADD designer with over 2 years of
+                  experience working with 3D modeling tools such as{" "}
+                  <b>Inventor</b>, <b>Solidworks</b>, and <b>Fusion 360</b>.
+                  Eager to contribute to a manufacturing team aimed at creating
+                  highly parametric, durable, and innovative products. A
+                  background in front-end web development informs CADD modeling
+                  approach centered on usability and iterative workflows.
+                </p>
+                <h4>Hightlights & Qualifications:</h4>
+                <ul className={styles["experience"]}>
+                  <li className={styles["kumar"]}>
+                    Possesses a robust understanding of design intent,
+                    functional manufacturing requirements, and material
+                    selection
+                  </li>
+                  <li className={styles["proza"]}>
+                    Self-motivated, detail-oriented, reliable, skilled at
+                    anticipating design pitfalls and problem solving effectively
+                  </li>
+                  <li>
+                    Quick to learn and keep up with new tools and technology
+                    trends
+                  </li>
+                  <li>
+                    Experienced team collaborator with a background in customer
+                    service and project coordinating
+                  </li>
+                </ul>
+                <h4>CAD:</h4>
+                <ul className={styles["experience"]}>
+                  <li>
+                    Created complex 3D parts and assemblies with a focus on
+                    manufacturability and functionality
+                  </li>
+                  <li>
+                    Drafted precise 2D technical drawings in compliance with
+                    GD&T and ANSI Standards
+                  </li>
+                  <li>
+                    Leveraged Inventor Studio to produce visually compelling
+                    renderings that showcase key product features and improve
+                    market appeal
+                  </li>
+                  <li>
+                    Utilized iLogic forms within Inventor to build resilient,
+                    adaptable models that minimize reworks and accommodate
+                    changing project needs
+                  </li>
+                  <li>
+                    Managed file structures and revision control using Inventor
+                    Vault and GitHub in collaborative design environments
+                  </li>
+                </ul>
+                <h4>Programing & Web Development:</h4>
+                <ul className={styles["experience"]}>
+                  <li>
+                    Developed and maintained a portfolio of 7+ web projects,
+                    including a collaborative project management site, a budget
+                    tracker, a reading library/blog, a of reproduction of the
+                    classic game of Snake, and more
+                  </li>
+                  <li>
+                    Designed sites that prioritize usability and long-term
+                    maintainability, incorporating responsive layouts,
+                    accessibility standards, and evolving digital design trends
+                  </li>
+                </ul>
+              </div>
 
               <section className={styles["skills-section"]}>
                 <ul className={styles["skills-list"]}>
@@ -67,10 +114,62 @@ export default function About() {
                         className={styles.fig}
                         // aria-label="Inventor logo"
                         alt="Inventor logo"
-                        src="/images/inventor.svg"
+                        src="/images/inventor-outline.svg"
                       />
                       <figcaption>
-                        <h4>JavaScript</h4>
+                        <h4>Inventor</h4>
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li className={styles.skill}>
+                    <figure>
+                      <img
+                        className={styles.fig}
+                        // aria-label="Fusion logo"
+                        alt="Fusion logo"
+                        src="/images/fusion.svg"
+                      />
+                      <figcaption>
+                        <h4>Fusion</h4>
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li className={styles.skill}>
+                    <figure>
+                      <img
+                        className={styles.fig}
+                        // aria-label="AutoCAD logo"
+                        alt="AutoCAD logo"
+                        src="/images/autocad.svg"
+                      />
+                      <figcaption>
+                        <h4>AutoCAD</h4>
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li className={styles.skill}>
+                    <figure>
+                      <img
+                        className={styles.fig}
+                        // aria-label="Revit logo"
+                        alt="Revit logo"
+                        src="/images/revit.svg"
+                      />
+                      <figcaption>
+                        <h4>Revit</h4>
+                      </figcaption>
+                    </figure>
+                  </li>
+                  <li className={styles.skill}>
+                    <figure>
+                      <img
+                        className={styles.fig}
+                        // aria-label="Solidworks logo"
+                        alt="Solidworks logo"
+                        src="/images/solidworks.svg"
+                      />
+                      <figcaption>
+                        <h4>Solidworks</h4>
                       </figcaption>
                     </figure>
                   </li>
@@ -159,7 +258,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className={styles["passions-section"]}>
+        {/* <section className={styles["passions-section"]}>
           <div className={styles["passions-header"]}>
             <h2 className={styles["section-heading"]}>Passions</h2>
           </div>
@@ -205,7 +304,7 @@ export default function About() {
               </li>
             </ul>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

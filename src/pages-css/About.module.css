@@ -42,6 +42,20 @@
   padding: 2rem 3rem;
   background: var(--infinity-trans);
   border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+.col-2-content h3 {
+  padding-bottom: 0.4rem;
+}
+.col-2-content h4 {
+  color: var(--creamy-berry);
+}
+
+.exp-section h4 {
+  padding-bottom: 0.9rem;
+  text-align: center;
+  font-family: "Tienne", serif;
+  color: var(--creamy-berry);
 }
 
 .col-2-content a {
@@ -74,18 +88,26 @@
 }
 
 .about-container h3 {
-  /* text-align: center; */
   font-family: "Tienne", serif;
   font-weight: 900;
   color: var(--mangala-pink);
   margin-top: 1.4rem;
 }
 
-.subtitle {
-  display: flex;
+.experience {
+  padding-left: 8%;
 }
-.subtitle p {
-  flex: auto;
+.experience li {
+  padding-bottom: 0.5rem;
+}
+
+.subtitle {
+  /* border: 0.08rem solid var(--sweet-perfume); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 /* ---- Skills icons ---- */
@@ -101,6 +123,7 @@
   justify-content: flex-start;
   gap: 0.6rem;
   padding: 0;
+  list-style: none;
 }
 
 .skill {
@@ -137,8 +160,11 @@
   color: var(--sweet-perfume);
 }
 
+.indent {
+  text-indent: 4%;
+}
 /* ---- Passions ---- */
-.passions-section {
+/* .passions-section {
   flex-direction: column !important;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
@@ -184,11 +210,7 @@
   line-height: 1.6;
   color: var(--peekaboo);
   padding-bottom: 0.4rem;
-}
-
-.indent {
-  text-indent: 8%;
-}
+} */
 
 /* ---- Responsive ---- */
 @media only screen and (max-width: 899px) {

@@ -21,6 +21,7 @@
   border: 0.08rem solid var(--sweet-perfume);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  list-style: none;
 }
 
 /*  Screenshots  */
