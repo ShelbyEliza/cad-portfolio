@@ -1,10 +1,19 @@
 import Lyre1 from "./Lyre1.png";
 import Lyre2 from "./Lyre2.png";
-import waffle1 from "././waffle-maker-1.png";
-import waffle2 from "././waffle-maker-2.png";
-import waffle3 from "././waffle-maker-3.png";
-import waffle4 from "././waffle-maker-4.png";
-import waffle5 from "././waffle-maker-5.png";
+import lyre1 from "./lyre-stand-1.png";
+import lyre2 from "./lyre-stand-2.png";
+import lyre3 from "./lyre-stand-3.png";
+import lyre4 from "./lyre-stand-4.png";
+import lyre5 from "./lyre-stand-5.png";
+import lyre6 from "./lyre-stand-6.jpg";
+import lyre7 from "./lyre-stand-7.jpg";
+import lyre8 from "./lyre-stand-8.jpg";
+import waffle1 from "./waffle-maker-1.png";
+import waffle2 from "./waffle-maker-2.png";
+import waffle3 from "./waffle-maker-3.png";
+import waffle4 from "./waffle-maker-4.png";
+import waffle5 from "./waffle-maker-5.png";
+import wafflePD from "./waffle-maker-product-journey.png";
 import wheel1 from "./cat-wheel-1.png";
 import wheel2 from "./cat-wheel-2.png";
 import wheel3 from "./cat-wheel-3.png";
@@ -19,11 +28,18 @@ import draftingDesk4 from "./drafting-desk-4.png";
 import draftingDesk5 from "./drafting-desk-5.png";
 import birdHouse1 from "./bird-house-1.png";
 import birdHouse2 from "./bird-house-2.png";
+import birdHouse3 from "./bird-house-3.png";
+import birdHouse4 from "./bird-house-4.png";
+import birdHouse5 from "./bird-house-5.png";
+import birdHouse6 from "./bird-house-6.png";
 import sheetMetalHousing1 from "./sheet-metal-housing-1.png";
 import sheetMetalHousing2 from "./sheet-metal-housing-2.png";
-import tableSupport from "./table-support.png";
+import tableSupport1 from "./table-support-1.png";
+import tableSupport2 from "./table-support-2.png";
+import tableSupport3 from "./table-support-3.png";
 import mirrorStand1 from "./mirror-stand-1.png";
 import mirrorStand2 from "./mirror-stand-2.png";
+import mirrorStand3 from "./mirror-stand-3.png";
 import neonSign from "./neon-sign.png";
 import beltTightener from "./belt-tightener.png";
 import gear from "./gear.png";
@@ -31,17 +47,65 @@ import gear from "./gear.png";
 export function RendersData() {
   let lyreImages = [
     {
-      src: Lyre1,
+      src: lyre1,
       alt: "Lyre Front",
-      title: "Lyre Front1",
+      title: "Lyre Front 1",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
     },
     {
-      src: Lyre2,
-      alt: "Lyre Back",
-      title: "Lyre Back2",
+      src: lyre2,
+      alt: "Lyre Front",
+      title: "Lyre Front 2",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
     },
+    {
+      src: lyre3,
+      alt: "Lyre Front",
+      title: "Lyre Front 3",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    {
+      src: lyre4,
+      alt: "Lyre Front",
+      title: "Lyre Front 4",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    {
+      src: lyre5,
+      alt: "Lyre Front",
+      title: "Lyre Front 5",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    {
+      src: lyre6,
+      alt: "Lyre Front",
+      title: "Lyre Front 6",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    {
+      src: lyre7,
+      alt: "Lyre Front",
+      title: "Lyre Front 7",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    {
+      src: lyre8,
+      alt: "Lyre Front",
+      title: "Lyre Front 8",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    // {
+    //   src: Lyre1,
+    //   alt: "Lyre Front",
+    //   title: "Lyre Front1",
+    //   description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    // },
+    // {
+    //   src: Lyre2,
+    //   alt: "Lyre Back",
+    //   title: "Lyre Back2",
+    //   description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    // },
   ];
   let waffleImages = [
     {
@@ -72,6 +136,12 @@ export function RendersData() {
       src: waffle5,
       alt: "Waffle Maker",
       title: "Waffle Maker5",
+      description: "fhsiridf eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    {
+      src: wafflePD,
+      alt: "Waffle Maker",
+      title: "Waffle Maker Product Journey",
       description: "fhsiridf eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
     },
   ];
@@ -165,6 +235,30 @@ export function RendersData() {
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
     },
     {
+      src: birdHouse3,
+      alt: "Sheet Metal Bird House",
+      title: "Sheet Metal Bird House 3",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    {
+      src: birdHouse4,
+      alt: "Sheet Metal Bird House",
+      title: "Sheet Metal Bird House 4",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    {
+      src: birdHouse5,
+      alt: "Sheet Metal Bird House",
+      title: "Sheet Metal Bird House 5",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    {
+      src: birdHouse6,
+      alt: "Sheet Metal Bird House",
+      title: "Sheet Metal Bird House 6",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    {
       src: sheetMetalHousing1,
       alt: "Sheet Metal Housing Recreated",
       title: "Sheet Metal Housing Recreated from Drawing 1",
@@ -191,9 +285,27 @@ export function RendersData() {
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
     },
     {
-      src: tableSupport,
+      src: mirrorStand3,
+      alt: "Mirror Stand",
+      title: "Mirror Stand 3",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    {
+      src: tableSupport1,
       alt: "3D Printed Support for a Three-Legged Table",
-      title: "3D Printed Support for a Three-Legged Table",
+      title: "3D Printed Support for a Three-Legged Table 1",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    {
+      src: tableSupport2,
+      alt: "3D Printed Support for a Three-Legged Table",
+      title: "3D Printed Support for a Three-Legged Table 2",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+    },
+    {
+      src: tableSupport3,
+      alt: "3D Printed Support for a Three-Legged Table",
+      title: "3D Printed Support for a Three-Legged Table 3",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
     },
   ];
