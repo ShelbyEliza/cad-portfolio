@@ -1,5 +1,3 @@
-import Lyre1 from "./Lyre1.png";
-import Lyre2 from "./Lyre2.png";
 import lyre1 from "./lyre-stand-1.png";
 import lyre2 from "./lyre-stand-2.png";
 import lyre3 from "./lyre-stand-3.png";
@@ -45,67 +43,65 @@ import beltTightener from "./belt-tightener.png";
 import gear from "./gear.png";
 
 export function RendersData() {
-  let lyreImages = [
-    {
-      src: lyre1,
-      alt: "Lyre Front",
-      title: "Lyre Front 1",
-      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
-    },
-    {
-      src: lyre2,
-      alt: "Lyre Front",
-      title: "Lyre Front 2",
-      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
-    },
-    {
-      src: lyre3,
-      alt: "Lyre Front",
-      title: "Lyre Front 3",
-      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
-    },
-    {
-      src: lyre4,
-      alt: "Lyre Front",
-      title: "Lyre Front 4",
-      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
-    },
-    {
-      src: lyre5,
-      alt: "Lyre Front",
-      title: "Lyre Front 5",
-      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
-    },
-    {
-      src: lyre6,
-      alt: "Lyre Front",
-      title: "Lyre Front 6",
-      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
-    },
+  let lyre1Images = [
     {
       src: lyre7,
       alt: "Lyre Front",
       title: "Lyre Front 7",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: lyre8,
       alt: "Lyre Front",
       title: "Lyre Front 8",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
-    // {
-    //   src: Lyre1,
-    //   alt: "Lyre Front",
-    //   title: "Lyre Front1",
-    //   description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
-    // },
-    // {
-    //   src: Lyre2,
-    //   alt: "Lyre Back",
-    //   title: "Lyre Back2",
-    //   description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
-    // },
+  ];
+  let lyre2Images = [
+    {
+      src: lyre4,
+      alt: "Lyre Front",
+      title: "Lyre Front 4",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
+    },
+    {
+      src: lyre1,
+      alt: "Lyre Front",
+      title: "Lyre Front 1",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
+    },
+    {
+      src: lyre5,
+      alt: "Lyre Front",
+      title: "Lyre Front 5",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
+    },
+    {
+      src: lyre2,
+      alt: "Lyre Front",
+      title: "Lyre Front 2",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
+    },
+    {
+      src: lyre6,
+      alt: "Lyre Front",
+      title: "Lyre Front 6",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
+    },
+    {
+      src: lyre3,
+      alt: "Lyre Front",
+      title: "Lyre Front 3",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
+    },
   ];
   let waffleImages = [
     {
@@ -113,36 +109,42 @@ export function RendersData() {
       alt: "Waffle Maker",
       title: "Waffle Maker1",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: waffle2,
       alt: "Waffle Maker",
       title: "Waffle Maker2",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: waffle3,
       alt: "Waffle Maker",
       title: "Waffle Maker3",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: waffle4,
       alt: "Waffle Maker",
       title: "Waffle Maker4",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: waffle5,
       alt: "Waffle Maker",
       title: "Waffle Maker5",
       description: "fhsiridf eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: wafflePD,
       alt: "Waffle Maker",
       title: "Waffle Maker Product Journey",
       description: "fhsiridf eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
   ];
   let wheelImages = [
@@ -151,30 +153,35 @@ export function RendersData() {
       alt: "Cat Exercise Wheel",
       title: "Cat Exercise Wheel 1",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: wheel2,
       alt: "Cat Exercise Wheel",
       title: "Cat Exercise Wheel 2",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: wheel3,
       alt: "Cat Exercise Wheel",
       title: "Cat Exercise Wheel 3",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: wheel4,
       alt: "Cat Exercise Wheel",
       title: "Cat Exercise Wheel 4",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: wheel5,
       alt: "Cat Exercise Wheel",
       title: "Cat Exercise Wheel 5",
       description: "fhsiridf eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
   ];
   let deskImages = [
@@ -183,130 +190,157 @@ export function RendersData() {
       alt: "Drafting Desk",
       title: "Drafting Desk 1",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: draftingDesk2,
       alt: "Drafting Desk",
       title: "Drafting Desk 2",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: draftingDesk3,
       alt: "Drafting Desk",
       title: "Drafting Desk 3",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: draftingDesk4,
       alt: "Drafting Desk",
       title: "Drafting Desk 4",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: draftingDesk5,
       alt: "Drafting Desk",
       title: "Drafting Desk 5",
       description: "fhsiridf eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
   ];
-  let sheetMetalImages = [
-    {
-      src: patio1,
-      alt: "Patio Table",
-      title: "Patio Table 1",
-      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
-    },
-    {
-      src: patio2,
-      alt: "Patio Table",
-      title: "Patio Table 2",
-      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
-    },
+  let birdHouseImages = [
     {
       src: birdHouse1,
       alt: "Sheet Metal Bird House",
       title: "Sheet Metal Bird House 1",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: birdHouse2,
       alt: "Sheet Metal Bird House",
       title: "Sheet Metal Bird House 2",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: birdHouse3,
       alt: "Sheet Metal Bird House",
       title: "Sheet Metal Bird House 3",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: birdHouse4,
       alt: "Sheet Metal Bird House",
       title: "Sheet Metal Bird House 4",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: birdHouse5,
       alt: "Sheet Metal Bird House",
       title: "Sheet Metal Bird House 5",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: birdHouse6,
       alt: "Sheet Metal Bird House",
       title: "Sheet Metal Bird House 6",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
+  ];
+  let housingImages = [
     {
       src: sheetMetalHousing1,
       alt: "Sheet Metal Housing Recreated",
       title: "Sheet Metal Housing Recreated from Drawing 1",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: sheetMetalHousing2,
       alt: "Sheet Metal Housing Recreated",
       title: "Sheet Metal Housing Recreated from Drawing 2",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
   ];
-  let threeDPrintsImages = [
+  let patioImages = [
+    {
+      src: patio1,
+      alt: "Patio Table",
+      title: "Patio Table 1",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
+    },
+    {
+      src: patio2,
+      alt: "Patio Table",
+      title: "Patio Table 2",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
+    },
+  ];
+  let mirrorImages = [
+    {
+      src: mirrorStand3,
+      alt: "Mirror Stand",
+      title: "Mirror Stand 3",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
+    },
     {
       src: mirrorStand1,
       alt: "Mirror Stand",
       title: "Mirror Stand 1",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: mirrorStand2,
       alt: "Mirror Stand",
       title: "Mirror Stand 2",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
-    {
-      src: mirrorStand3,
-      alt: "Mirror Stand",
-      title: "Mirror Stand 3",
-      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
-    },
+  ];
+  let supportImages = [
     {
       src: tableSupport1,
       alt: "3D Printed Support for a Three-Legged Table",
       title: "3D Printed Support for a Three-Legged Table 1",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
-    },
-    {
-      src: tableSupport2,
-      alt: "3D Printed Support for a Three-Legged Table",
-      title: "3D Printed Support for a Three-Legged Table 2",
-      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: tableSupport3,
       alt: "3D Printed Support for a Three-Legged Table",
       title: "3D Printed Support for a Three-Legged Table 3",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
+    },
+    {
+      src: tableSupport2,
+      alt: "3D Printed Support for a Three-Legged Table",
+      title: "3D Printed Support for a Three-Legged Table 2",
+      description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
   ];
   let otherImages = [
@@ -315,28 +349,35 @@ export function RendersData() {
       alt: "Belt Tightener",
       title: "Belt Tightener Recreated",
       description: "fhsiri eowhfndfjs  dofsienf isjhoie ue[ajenf woiwuer ",
+      kind: "image",
     },
     {
       src: neonSign,
       alt: "Neon Sign",
       title: "Neon Sign",
       description: "3D Sketches, Inventor Materials",
+      kind: "image",
     },
     {
       src: gear,
       alt: "Spur Gear",
       title: "Spur Gear",
       description: "Technical Gear Design",
+      kind: "image",
     },
   ];
 
   return {
-    lyreImages,
+    lyre1Images,
+    lyre2Images,
     waffleImages,
     wheelImages,
     deskImages,
-    sheetMetalImages,
-    threeDPrintsImages,
+    birdHouseImages,
+    housingImages,
+    patioImages,
+    mirrorImages,
+    supportImages,
     otherImages,
   };
 }

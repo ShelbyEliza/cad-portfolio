@@ -33,7 +33,7 @@ export default function Models() {
     });
 
   return (
-    <div className={`page-content ${styles["page-container"]}`}>
+    <div className={`page-content ${styles["my-sites"]}`}>
       {lightboxOpen && (
         <Lightbox
           open={lightboxOpen}
@@ -47,21 +47,13 @@ export default function Models() {
         <div>
           <h2 className={styles["section-header"]}>Lyre Stand</h2>
         </div>
+        <ul className={styles.list}>{renderImageList(renders.lyreImages)}</ul>
+
         <p className={styles.description}>
           Designed in Inventor, this lyre stand began with hand-traced
           measurements of the instrument to establish the cradling curve, string
           clearance zone, and a 70° tilt-back angle.
-          <a
-            className={styles.follow}
-            target="_blank"
-            rel="noreferrer"
-            href="https://docs.google.com/presentation/d/1KwxC_XqKUq5GguLw-eJvYtBSWGXr17MWH3OhLN3zHIw/edit?usp=sharing"
-          >
-            Presentation Link!
-          </a>
         </p>
-        <ul className={styles.list}>{renderImageList(renders.lyre1Images)}</ul>
-
         <p className={styles.description}>
           While early concept designs prioritized aesthetics, the final design
           revision was also informed by 3D printing constraints. Final design
@@ -72,24 +64,20 @@ export default function Models() {
           demonstrating the importance of fit testing before finalizing
           assemblies.
         </p>
-
-        <ul className={`${styles.list} ${styles["bottom-box"]}`}>
-          {renderImageList(renders.lyre2Images)}
-        </ul>
       </section>
 
       <section>
         <div>
           <h2 className={styles["section-header"]}>Waffle Maker</h2>
         </div>
-        <p className={styles.description}>
-          The <b className={styles.bold}>'Yaw-Baker'</b> is a concept waffle
-          maker designed in Inventor for a Product Design and Development
-          course, developed through a full product design pipeline - from
-          customer persona research and competitive analysis through CAD
-          modeling, internal component layout, and marketing strategy.
-        </p>
         <ul className={styles.list}>{renderImageList(renders.waffleImages)}</ul>
+        <p className={styles.description}>
+          The Yaw-Baker is a concept waffle maker designed in Inventor for a
+          Product Design and Development course, developed through a full
+          product design pipeline - from customer persona research and
+          competitive analysis through CAD modeling, internal component layout,
+          and marketing strategy.
+        </p>
         <p className={styles.description}>
           The design centers on three user-focused features: overall slim
           profile for convenient storage, swappable patterned grill pans for
@@ -99,7 +87,7 @@ export default function Models() {
           stream music while cooking, transitioning to a chime alert when
           waffles are ready.
         </p>
-        <p className={`${styles.description} ${styles["bottom-box"]}`}>
+        <p className={styles.description}>
           Internally, the design accounts for heat shielding around sensitive
           electrical components and heat funneling system, channeling residual
           heat to the syrup tray. The project also included a full SWOT
@@ -113,13 +101,13 @@ export default function Models() {
         <div>
           <h2 className={styles["section-header"]}>Cat Wheel</h2>
         </div>
+        <ul className={styles.list}>{renderImageList(renders.wheelImages)}</ul>
         <p className={styles.description}>
           This project involved reverse-engineering a commercial cat exercise
           wheel in Inventor and redesigning its curved plate components
           (originally manufactured via plastic injection molding) for aluminum
           die casting.
         </p>
-        <ul className={styles.list}>{renderImageList(renders.wheelImages)}</ul>
         <p className={styles.description}>
           Aluminum A380 was selected for its balance of lightweight properties,
           medium strength, machinability, and cost-effectiveness. With 9
@@ -128,20 +116,7 @@ export default function Models() {
           Cold-chamber die casting was specified to accommodate aluminum's high
           melting point and corrosive characteristics.
         </p>
-        <div className={`${styles["pdf-card"]} ${styles.border}`}>
-          <iframe
-            src="/drawings/cat-wheel.pdf"
-            width="100%"
-            height="500px"
-            title="Cat Wheel Technical Drawing"
-          />
-          <div className={styles["link-container"]}>
-            <a href="/drawings/cat-wheel.pdf" target="_blank" rel="noreferrer">
-              View Drawing
-            </a>
-          </div>
-        </div>
-        <p className={`${styles.description} ${styles["bottom-box"]}`}>
+        <p className={styles.description}>
           Key design decisions were driven by die casting constraints: a nominal
           wall thickness of 0.1" (exceeding the 0.08" minimum for aluminum),
           fillets of 0.15" applied to all inside corners to prevent stress
@@ -157,8 +132,13 @@ export default function Models() {
       </section>
       <section>
         <div>
-          <h2 className={styles["section-header"]}>3D Printing Solutions</h2>
+          <h2 className={styles["section-header"]}>
+            3D Printing for Everyday Solutions
+          </h2>
         </div>
+        <ul className={styles.list}>
+          {renderImageList(renders.threeDPrintsImages)}
+        </ul>
         <p className={styles.description}>
           Good design doesn't end at the studio door. When a mirror stand broke
           during a move and a charming three-legged table turned out to be
@@ -176,7 +156,6 @@ export default function Models() {
           specific tolerances of my printer, producing a custom mount,
           seamlessly joining the mirror and dresser.
         </p>
-        <ul className={styles.list}>{renderImageList(renders.mirrorImages)}</ul>
         <h3 className={styles["minor-header"]}>Table Supports</h3>
         <p className={styles.description}>
           The table supports presented a different challenge: three legs
@@ -191,10 +170,7 @@ export default function Models() {
           for the varying terrain. I'm proud to declare the parts are printed,
           fitted, and the table is stable!
         </p>
-        <ul className={styles.list}>
-          {renderImageList(renders.supportImages)}
-        </ul>
-        <p className={`${styles.description} ${styles["bottom-box"]}`}>
+        <p className={styles.description}>
           Both projects follow the same process I bring to every design problem:
           identify the need precisely, measure what already exists, consider
           materials and manufacturing method, prototype, test, and refine. The
@@ -202,31 +178,6 @@ export default function Models() {
           replacing it, is its own reward.
         </p>
       </section>
-
-      <section>
-        <div>
-          <h2 className={styles["section-header"]}>Drafting Desk</h2>
-        </div>
-        <p className={styles.description}>TBD</p>
-        <ul className={styles.list}>{renderImageList(renders.deskImages)}</ul>
-        <p className={styles.description}>TBD</p>
-        <div
-          className={`${styles["pdf-card"]} ${styles["bottom-box"]} ${styles.border}`}
-        >
-          <iframe
-            src="/drawings/desk.pdf"
-            width="100%"
-            height="500px"
-            title="Drafting Desk Technical Drawing"
-          />
-          <div className={styles["link-container"]}>
-            <a href="/drawings/desk.pdf" target="_blank" rel="noreferrer">
-              View Drawing
-            </a>
-          </div>
-        </div>
-      </section>
-
       <section>
         <div>
           <h2 className={styles["section-header"]}>Sheet Metal Projects</h2>
@@ -244,15 +195,13 @@ export default function Models() {
                 height="500px"
                 title="Patio Table Technical Drawing"
               />
-              <div className={styles["link-container"]}>
-                <a
-                  href="/drawings/patio-table.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Drawing
-                </a>
-              </div>
+              <a
+                href="/drawings/patio-table.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Patio Table Drawing
+              </a>
             </div>
           </div>
         </div>
@@ -270,15 +219,13 @@ export default function Models() {
                 height="450px"
                 title="Sheet Metal Rear Panel - Technical Drawing"
               />
-              <div className={styles["link-container"]}>
-                <a
-                  href="/drawings/housing-instructions.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Original Drawing
-                </a>
-              </div>
+              <a
+                href="/drawings/housing-instructions.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Original Rear Panel Drawing
+              </a>
             </div>
             <div className={`${styles["pdf-card"]} ${styles.right}`}>
               <iframe
@@ -288,51 +235,34 @@ export default function Models() {
                 height="450px"
                 title="My Sheet Metal Rear Panel - Technical Drawing"
               />
-              <div className={styles["link-container"]}>
-                <a
-                  href="/drawings/housing.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Reproduction Drawing
-                </a>
-              </div>
+              <a href="/drawings/housing.pdf" target="_blank" rel="noreferrer">
+                Recreated Rear Panel Drawing
+              </a>
             </div>
           </div>
         </div>
-        <div className={styles["bottom-box"]}>
+        <div>
           <h3 className={styles["minor-header"]}>Bird House</h3>
-          <ul className={`${styles.list} ${styles["bottom-box"]}`}>
+          <ul className={styles.list}>
             {renderImageList(renders.birdHouseImages)}
           </ul>
         </div>
       </section>
 
       <section>
+        <div>
+          <h2 className={styles["section-header"]}>Drafting Desk</h2>
+          <p className={styles.description}>
+            Functional Mechanical Drafting Desk
+          </p>
+        </div>
+        <ul className={styles.list}>{renderImageList(renders.deskImages)}</ul>
+      </section>
+      <section>
         <div className={styles.top}>
           <h2 className={styles["section-header"]}>Even More!</h2>
         </div>
-        <div className={`${styles["pdf-card"]} ${styles.border}`}>
-          <iframe
-            src="/drawings/belt-tightener.pdf"
-            width="100%"
-            height="500px"
-            title="Belt Tightener Technical Drawing"
-          />
-          <div className={styles["link-container"]}>
-            <a
-              href="/drawings/belt-tightener.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Drawing
-            </a>
-          </div>
-        </div>
-
-        <ul className={`${styles.list} ${styles["bottom-box"]}`}>
-          {renderImageList(renders.otherImages)}
-        </ul>
+        <ul className={styles.list}>{renderImageList(renders.otherImages)}</ul>
       </section>
     </div>
   );
