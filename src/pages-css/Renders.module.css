@@ -1,17 +1,24 @@
 /* Project Section */
 .page-container {
   padding-bottom: 1rem;
+
+  border-radius: 1em;
 }
 
 section {
   margin-bottom: 2.5rem;
-  margin-top: 1rem;
+  margin-top: 4rem;
 
   border-radius: 20px;
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
+  box-shadow:
+    var(--sweet-perfume-super-duper-trans) 6px -6px 100px,
+    var(--sweet-perfume-super-duper-trans) -6px 6px 100px;
 }
-
+section:first-of-type {
+  margin-top: 1rem;
+}
 .section-header {
   padding: 1.2rem 1.4rem;
   background: var(--infinity-trans);
@@ -25,33 +32,59 @@ section {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 
-  border: 0.08rem solid var(--creamy-berry);
+  border: 0.01em solid var(--voila);
+  /* border-bottom: 0.1em solid var(--voila); */
 }
 
 .minor-header {
-  padding: 1.2rem 0.4rem 0rem 4rem;
-  background: var(--infinity-trans);
+  padding: 1.2rem 0.4rem 0.8rem 3.5rem;
+  background: var(--shuriken);
 
-  border: 0.08rem solid var(--creamy-berry);
-  border-bottom: none;
+  border-left: 0.01em solid var(--voila);
+  border-right: 0.01em solid var(--voila);
 
   font-size: 1.4rem;
-  color: var(--mangala-pink);
+  color: var(--moonraker);
   font-family: "Proza Libre", sans-serif;
 }
+h4 {
+  padding-bottom: 0.6rem;
+  padding-top: 0.8rem;
+}
 
-.description {
-  padding: 0.4rem 6rem 1.5rem 6rem;
+.description-container {
+  display: flex;
+  flex-direction: column;
   background: var(--infinity-trans);
-  border: 0.08rem solid var(--creamy-berry);
+  border: 0.01em solid var(--voila);
   border-top: none;
-  border-bottom: none;
+
+  justify-content: center;
+  align-items: center;
+}
+.description {
+  padding: 2rem 0rem;
 
   color: var(--peekaboo);
   font-size: 1.25rem;
   line-height: 1.6rem;
   font-weight: 500;
   font-family: "Quicksand", sans-serif;
+
+  max-width: 65ch;
+}
+.bold,
+b {
+  color: var(--sweet-perfume);
+}
+.p-cont,
+.p-first {
+  padding-top: 0rem;
+}
+
+.last {
+  padding-top: 0rem;
+  padding-bottom: 3rem;
 }
 .follow {
   padding-left: 0.5em;
@@ -69,8 +102,7 @@ section {
 /* Image Grid */
 .list {
   padding: 0.5rem;
-  background: var(--infinity-trans);
-  background: var(--creamy-berry-trans);
+  background: var(--creamy-berry-super-trans);
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -78,18 +110,15 @@ section {
   align-content: space-between;
   gap: 0.5rem;
 
-  border: 0.08rem solid var(--sweet-perfume);
+  border: 0.01em solid var(--voila);
   border-top: none;
+  padding: 2em;
 }
 .bottom-box {
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
 
-  border-bottom: 0.08rem solid var(--creamy-berry);
-}
-.border {
-  border-left: 0.08rem solid var(--creamy-berry);
-  border-right: 0.08rem solid var(--creamy-berry);
+  border-bottom: 0.01em solid var(--voila);
 }
 
 .item {
@@ -104,32 +133,41 @@ section {
   flex-direction: column;
   overflow: hidden;
   justify-content: space-between;
-
-  transition: box-shadow 0.2s ease;
-  cursor: zoom-in;
   align-items: center;
 
-  margin: 10px;
   border-radius: 4%;
+  box-shadow:
+    var(--sweet-perfume-super-duper-trans) -0.04em -0.04em 3em,
+    var(--sweet-perfume-super-duper-trans) 0.04em 0.04em 3em;
+}
+.img-container:hover {
+  cursor: zoom-in;
+
+  box-shadow:
+    var(--infinity-trans) -0.2em -0.2em 3em,
+    var(--infinity-trans) 0.2em 0.2em 3em;
 }
 
 .shot {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 2px solid var(--umbra);
+  border: 0.1em solid var(--shuriken);
   border-radius: 4%;
+}
+.shot:hover {
+  border: 0.15em solid var(--moonraker);
 }
 
 /* PDF Layout */
 .pdf-container {
   padding: 0.5rem;
-  background: #2a2a2e;
+  background: var(--caviar);
 
   display: flex;
   flex-direction: row;
-  border-left: 0.08rem solid var(--creamy-berry);
-  border-right: 0.08rem solid var(--creamy-berry);
+  border-left: 0.01em solid var(--voila);
+  border-right: 0.01em solid var(--voila);
 }
 
 .pdf-card {
@@ -156,15 +194,19 @@ section {
 
 .link-container {
   width: 100%;
-  padding: 2rem;
+  padding-top: 1.4rem;
+  padding-bottom: 2.4rem;
   text-align: center;
-  background: #2a2a2e;
+  background: var(--caviar);
 }
 
 .pdf-card a {
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 1.4rem;
   background: var(--moonraker);
-  border: 0.1em solid var(--umbra);
+  border: 0.1em solid var(--infinity);
+  /* box-shadow:
+    var(--moonraker) -0.08em 0.08em 0.2em,
+    var(--moonraker) 0.08em -0.08em 0.2em; */
 
   width: 100%;
 
@@ -175,7 +217,7 @@ section {
   font-weight: 800;
 
   color: var(--infinity);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Lexend Giga", sans-serif;
 }
 
@@ -183,11 +225,10 @@ section {
   color: var(--moonraker);
   background: var(--infinity);
   border: 0.2em solid var(--moonraker);
-
-  /* text-decoration: underline; */
 }
-.bold {
-  color: var(--mangala-pink);
+.border {
+  border-left: 0.01em solid var(--voila);
+  border-right: 0.01em solid var(--voila);
 }
 
 /*-------------------- Responsive Design ----------------------*/
@@ -214,9 +255,9 @@ section {
   }
   .img-container {
     margin: 1rem;
-    background: var(--shuriken);
+    /* background: var(--shuriken);
 
-    border: 0.08rem solid var(--moonraker);
+    border: 0.08rem solid var(--moonraker); */
   }
   .link:hover .shot {
     box-shadow: 0rem 0rem 0.6rem 0.1rem var(--moonraker);

@@ -5,8 +5,10 @@
   --umbra: #221a24;
   --infinity: #232333ff;
   --infinity-trans: rgba(35, 35, 51, 0.767);
+  --jaguar-trans: #2726314f;
 
   --shuriken: #2f2f44ff;
+  --caviar: #2a2a2e;
 
   --heron: #5d5d87;
   --moonraker: #bdb8d6;
@@ -19,6 +21,9 @@
   --peekaboo: #e7dfe7;
   --creamy-berry: #e0bcd5;
   --creamy-berry-trans: #e0bcd54f;
+  --creamy-berry-super-trans: #e0bcd533;
+
+  --voila: #ac92a9;
 
   --sweet-perfume: #dd98ba;
   --sweet-perfume-trans: #dd98bbad;
