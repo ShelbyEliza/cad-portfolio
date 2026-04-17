@@ -3,10 +3,12 @@
   flex-direction: column;
   margin-bottom: 2rem;
   border-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 
 .about-container b {
-  color: var(--creamy-berry);
+  color: var(--mangala-pink);
   font-weight: 700;
 }
 
@@ -21,17 +23,6 @@
 .edu-skills-section {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-}
-
-.col-1 {
-  flex: 0 0 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem 1rem;
-  background: var(--infinity);
-  border-right: 0.08rem solid var(--sweet-perfume);
-  border-top-left-radius: 2rem;
 }
 
 .col-2 {
@@ -109,20 +100,28 @@
   padding-left: 8%;
   padding-right: 8%;
 }
+.sub-list {
+  padding-left: 2.4rem;
+  padding-bottom: 1rem;
+}
+.sub-list li:first-of-type {
+  padding-top: 1rem;
+}
 
 /* ---- Skills icons ---- */
 .skills-section {
   margin-top: 1.4rem;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   border-top: 0.08rem solid var(--sweet-perfume);
+  border-bottom: 0.08rem solid var(--sweet-perfume);
 }
 
 .skills-list {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 0.6rem;
-  padding: 0;
+  padding: 1.4rem;
   list-style: none;
 }
 
@@ -218,16 +217,6 @@
     flex-direction: column;
   }
 
-  .col-1 {
-    flex: 0 0 auto;
-    width: 100%;
-    border-right: none;
-    border-bottom: 0.08rem solid var(--sweet-perfume);
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    padding: 0.8rem;
-  }
-
   .section-heading {
     writing-mode: horizontal-tb;
     transform: none;
@@ -236,7 +225,7 @@
 
   .col-2-content {
     padding: 1.2rem 1.4rem;
-    border-top-right-radius: 0;
+    /* border-top-right-radius: 0; */
   }
 
   .passions-content {

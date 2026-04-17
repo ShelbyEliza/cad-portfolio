@@ -37,71 +37,130 @@ export default function About() {
               <div className={styles["exp-section"]}>
                 <h3>Experience</h3>
                 <p className={styles.indent}>
-                  Knowledgeable and motivated CADD designer with over 2 years of
-                  experience working with 3D modeling tools such as{" "}
-                  <b>Inventor</b>, <b>Solidworks</b>, and <b>Fusion 360</b>.
-                  Eager to contribute to a manufacturing team aimed at creating
-                  highly parametric, durable, and innovative products. A
-                  background in front-end web development informs CADD modeling
-                  approach centered on usability and iterative workflows.
+                  Knowledgeable and motivated CADD designer with 1.5 years of
+                  experience in <em>Autodesk Inventor</em>, <em>SolidWorks</em>,{" "}
+                  <em>AutoCAD</em>, <em>Revit</em>, and <em>Fusion 360</em>.
+                  Eager to contribute to a manufacturing team focused on
+                  creating highly <b>parametric</b>, <b>durable</b>, and{" "}
+                  <b>innovative </b>products - with a particular interest in{" "}
+                  <b>sustainable product design</b> and
+                  <b> low-environmental impact manufacturing</b>. A background
+                  in front-end web development informs a CAD approach centered
+                  on usability, iterative workflows, and clean design
+                  documentation.
                 </p>
                 <h4>Hightlights & Qualifications:</h4>
                 <ul className={styles["experience"]}>
                   <li className={styles["kumar"]}>
-                    Possesses a robust understanding of design intent,
-                    functional manufacturing requirements, and material
-                    selection
+                    Robust understanding of <b>design intent</b>,{" "}
+                    <b>functional manufacturing requirements</b>, and{" "}
+                    <b>material selection</b>, demonstrated through projects,
+                    such as:
+                    <ul className={styles["sub-list"]}>
+                      <li>
+                        a 3D printed lyre stand designed around print bed
+                        constraints, part stability, and layer orientation
+                      </li>
+                      <li>
+                        an aluminum die casting redesign specifying draft
+                        angles, fillet radii and placement, avoidance of
+                        cutouts, and ejector pin positioning
+                      </li>
+                    </ul>
                   </li>
                   <li className={styles["proza"]}>
-                    Self-motivated, detail-oriented, reliable, skilled at
-                    anticipating design pitfalls and problem solving effectively
+                    Self-motivated and detail-oriented, with a particular focus
+                    on identifying and resolving design pitfalls before the
+                    production phase. Experienced across multiple{" "}
+                    <b>Fusion 360 workspaces</b>, including:
+                    <ul className={styles["sub-list"]}>
+                      <li>
+                        <b>Simulation</b> workflows for static stress,
+                        structural buckling, and shape optimization testing
+                      </li>
+                      <li>
+                        <b>Manufacturing</b> - created custom CAM toolpaths for
+                        milling and etching CAD designs in wood and acrylic
+                        using an Othermill CNC
+                      </li>
+                      <li>
+                        <b>Generative design</b>, identifying key preserve and
+                        obstacle geometries informed by an understanding of
+                        structural constraints
+                      </li>
+                    </ul>
                   </li>
                   <li>
-                    Quick to learn and keep up with new tools and technology
-                    trends
+                    Quick to learn and apply new tools and technologies,
+                    bringing the same disciplined process to unfamiliar software
+                    as to design problems
                   </li>
                   <li>
-                    Experienced team collaborator with a background in customer
-                    service and project coordinating
+                    Experienced <b>team collaborator</b> with a background in
+                    customer service and <b>project coordination</b>
                   </li>
                 </ul>
                 <h4>CAD:</h4>
                 <ul className={styles["experience"]}>
                   <li>
                     Created complex 3D parts and assemblies with a focus on
-                    manufacturability and functionality
+                    manufacturability and functionality, including a{" "}
+                    <b>full product design pipeline</b> for a concept waffle
+                    maker guided by a<b> customer persona</b>, a{" "}
+                    <b>SWOT analysis</b>, and a <b>Gantt chart timeline</b>. The
+                    CAD modeling was informed by this extensive research and
+                    product constraints such as <b></b>internal component
+                    relationships, heat shielding requirements for sensitive
+                    components, overall size and user-facing smart features,
+                    including a Bluetooth-connected display for music streaming
+                    control
                   </li>
                   <li>
-                    Drafted precise 2D technical drawings in compliance with
-                    GD&T and ANSI Standards
+                    Drafted <b>precise technical drawings</b> in compliance with
+                    <b> GD&T</b> and <b>ANSI standards</b>, with advanced weld
+                    symbol annotation on sheet metal projects including a patio
+                    table and rear panel housing reproduction
                   </li>
                   <li>
-                    Leveraged Inventor Studio to produce visually compelling
-                    renderings that showcase key product features and improve
-                    market appeal
+                    Developed a working understanding of <b>sheet metal</b>{" "}
+                    design considerations: bend placement and radii, hole and
+                    cutout positioning, notch sizing, thickness tolerancing, and
+                    mating part allowances
                   </li>
                   <li>
-                    Utilized iLogic forms within Inventor to build resilient,
-                    adaptable models that minimize reworks and accommodate
-                    changing project needs
+                    Leveraged <b>Inventor Studio</b> to produce visually
+                    compelling renderings that showcase key product features and
+                    improve market appeal
                   </li>
                   <li>
-                    Managed file structures and revision control using Inventor
-                    Vault and GitHub in collaborative design environments
+                    Utilized <b>iLogic forms</b> within Inventor to build
+                    resilient, adaptable models that minimize reworks and
+                    accommodate changing project needs
+                  </li>
+                  <li>
+                    Managed file structures and revision control using GitHub in
+                    collaborative design environments
                   </li>
                 </ul>
                 <h4>Programing & Web Development:</h4>
                 <ul className={styles["experience"]}>
                   <li>
-                    Developed and maintained a portfolio of 7+ web projects,
-                    including a collaborative project management site, a budget
-                    tracker, a reading library/blog, a of reproduction of the
-                    classic game of Snake, and more
+                    Developed and maintained a{" "}
+                    <b>portfolio of 7+ web projects</b>
+                    built in React, including a collaborative project management
+                    site, a budget tracker, a reading library and blog, and a
+                    reproduction of the classic Snake game
                   </li>
                   <li>
-                    Designed sites that prioritize usability and long-term
-                    maintainability, incorporating responsive layouts,
-                    accessibility standards, and evolving digital design trends
+                    Designed sites that prioritize <b>usability</b> and{" "}
+                    <b>long-term maintainability</b>, incorporating{" "}
+                    <b>responsive layouts</b>, <b>accessibility standards</b>,
+                    and evolving <b>digital design trends</b>
+                  </li>
+                  <li>
+                    Currently migrating a React-based portfolio from Firebase to
+                    Cloudflare Pages, including <b>dependency modernization</b>{" "}
+                    and removal of legacy backend integrations
                   </li>
                 </ul>
               </div>
