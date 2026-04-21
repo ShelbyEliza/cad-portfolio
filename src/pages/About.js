@@ -146,7 +146,7 @@ export default function About() {
                 <ul className={styles["experience"]}>
                   <li>
                     Developed and maintained a{" "}
-                    <b>portfolio of 7+ web projects</b>
+                    <b>portfolio of 7+ web projects </b>
                     built in React, including a collaborative project management
                     site, a budget tracker, a reading library and blog, and a
                     reproduction of the classic Snake game

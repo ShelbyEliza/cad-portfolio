@@ -236,11 +236,11 @@ export default function Models() {
           <h2 className={styles["section-header"]}>Drafting Desk</h2>
         </div>
         <div className={styles["description-container"]}>
-          <p className={styles.description}>TBD</p>
+          <p className={styles.description}></p>
         </div>
         <ul className={styles.list}>{renderImageList(renders.deskImages)}</ul>
         <div className={styles["description-container"]}>
-          <p className={styles.description}>TBD</p>
+          <p className={styles.description}></p>
         </div>
         <div
           className={`${styles["pdf-card"]} ${styles["bottom-box"]} ${styles.border}`}
