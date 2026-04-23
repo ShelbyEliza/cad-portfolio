@@ -44,7 +44,7 @@ export default function About() {
                   creating highly <b>parametric</b>, <b>durable</b>, and{" "}
                   <b>innovative </b>products - with a particular interest in{" "}
                   <b>sustainable product design</b> and
-                  <b> low-environmental impact manufacturing</b>. A background
+                  <b> low-environmental-impact manufacturing</b>. A background
                   in front-end web development informs a CAD approach centered
                   on usability, iterative workflows, and clean design
                   documentation.
@@ -134,7 +134,7 @@ export default function About() {
                   </li>
                   <li>
                     Utilized <b>iLogic forms</b> within Inventor to build
-                    resilient, adaptable models that minimize reworks and
+                    resilient, adaptable models that minimize rework and
                     accommodate changing project needs
                   </li>
                   <li>
@@ -142,7 +142,7 @@ export default function About() {
                     collaborative design environments
                   </li>
                 </ul>
-                <h4>Programing & Web Development:</h4>
+                <h4>Programming & Web Development:</h4>
                 <ul className={styles["experience"]}>
                   <li>
                     Developed and maintained a{" "}
